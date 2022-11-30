@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width", initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">This is a Survey Form</h1>
+    <p id="description">A showcase of forms, clicks & fields</p> 
+    <div class="box">
+    <form id="survey-form" method="post">
+      <fieldset>
+        <label for="name" id="name-label">Name <br><input id="name" name="name" placeholder="your name here" type="text" required /></label>        
+        <label for="email" id="email-label">Email <br> <input id="email" name="email" placeholder="your email here" type="email" required /></label>
+        <label for="number" id="number-label">Number <br> <input id="number" placeholder="your number here" name="number" type="number" min=1 max=255 required /></label>
+      </fieldset>
+      <fieldset>
+      <label for="dropdown">What do you think of this <br>
+          <select id="dropdown" name="dropdown">
+            <option value="">(select one)</option>
+            <option value="1">It's cool</option>
+            <option value="2">It's fun</option>
+            <option value="3">It's simple</option>
+            <option value="4">Other</option>
+          </select>
+      </label>
+      <label for="checkbox" name="checkbox">
+        <input id="checkbox1" type="checkbox" required name="checkbox" class="inline" value="1"/> This is a checkbox
+      </label>
+        <input id="checkbox2" type="checkbox" required name="checkbox" class="inline" value="2" /> And another checkbox
+        </label>
+      </fieldset>
+      <fieldset>
+          <label for="cat-person"><input id="cat-person" type="radio" name="user-type" value="cat"/> Cat Person</label>
+          <label for="dog-person"><input id="dog-person" type="radio" name="user-type" value="dog"/> Dog Person</label>
+          <label for="textarea">Tell us about your pets
+          <textarea id="textarea" name="textarea" rows="3" cols="30" placeholder="a few things about your pets..."></textarea>
+          </label>
+      </fieldset>
+    <input id="submit" type="submit" value="Submit" />
+  </body>
+</html>
